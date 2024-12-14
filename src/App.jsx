@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.css";
 import Description from "./components/Descriptions/Description";
 import Options from "./components/Options/Options";
 import Feedback from "./components/Feedback/Feedback";
@@ -24,7 +25,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="wrapper">
       <Description />
       <Options
         feedback={feedback}
@@ -43,7 +44,7 @@ function App() {
           pozitive={positiveFeedback}
         />
       )}
-    </>
+    </div>
   );
 }
 
