@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Description from "./components/Descriptions/Description";
 import Options from "./components/Options/Options";
 import Feedback from "./components/Feedback/Feedback";
+import Notification from "./components/Notification/Notification";
 
 function App() {
   // const [feedback, setFeedback] = useState(() => {
@@ -53,7 +54,7 @@ function App() {
         resetFeedback={resetFeedback}
       />
       {totalFeedback === 0 ? (
-        <p>No feedback yet</p>
+        <Notification />
       ) : (
         <Feedback
           good={feedback.good}
