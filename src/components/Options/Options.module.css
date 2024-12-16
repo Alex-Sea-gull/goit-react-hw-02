@@ -4,7 +4,7 @@
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .optionButton {
@@ -18,8 +18,8 @@
 }
 
 .optionButton:hover {
-    background-color: #e8f0fe;
-    color: #1a73e8;
+    background-color: blue;
+    color: white;
     transform: translateY(-2px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
